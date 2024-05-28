@@ -15,6 +15,7 @@ module.exports = {
         'jsx-quotes': ['error', 'prefer-single'],
         'prettier/prettier': 0,
         '@typescript-eslint/no-unused-vars': 'warn',
+        'no-extra-semi': 0,
       },
     },
   ],
