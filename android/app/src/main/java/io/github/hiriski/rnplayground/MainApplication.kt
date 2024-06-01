@@ -1,4 +1,4 @@
-package com.reactnativeplayground
+package io.github.hiriski.rnplayground
 
 import android.app.Application
 import com.facebook.react.PackageList

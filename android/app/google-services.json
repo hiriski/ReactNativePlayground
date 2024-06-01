@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "800292886365",
+    "project_id": "reactnativeplayground-6c72c",
+    "storage_bucket": "reactnativeplayground-6c72c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800292886365:android:90f2e998e5637188ba3ab4",
+        "android_client_info": {
+          "package_name": "io.github.hiriski.rnplayground"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQiT07FAW0uhC4zl3Hc_UeCcqzVpQpw-o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
