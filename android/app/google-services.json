@@ -12,7 +12,12 @@
           "package_name": "io.github.hiriski.rnplayground"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "800292886365-ohsi9kpj94fr5r5gcsfrmjsn2rsaoftv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyAQiT07FAW0uhC4zl3Hc_UeCcqzVpQpw-o"
@@ -20,7 +25,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800292886365-ohsi9kpj94fr5r5gcsfrmjsn2rsaoftv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "800292886365-nm5qn2q12cju3qlh5t2u7cnojfq9u3ah.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "io.github.hiriski.rnplayground"
+              }
+            }
+          ]
         }
       }
     }
