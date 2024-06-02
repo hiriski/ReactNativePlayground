@@ -15,6 +15,11 @@ if linkage != nil
 end
 
 target 'ReactNativePlayground' do
+  pod 'Firebase', :modular_headers => true
+  pod 'FirebaseCoreInternal', :modular_headers => true
+  pod 'GoogleUtilities', :modular_headers => true
+  pod 'FirebaseCore', :modular_headers => true
+
   config = use_native_modules!
 
   use_react_native!(
@@ -36,5 +41,13 @@ target 'ReactNativePlayground' do
       :mac_catalyst_enabled => false,
       # :ccache_enabled => true
     )
+
+    # installer.pods_project.targets.each do |target|
+    # # Added below if-end statement
+    #   if target.name == "React-Core-RCTI18nStrings"
+    #     target.remove_from_project
+    #   end
+    # end
+
   end
 end
