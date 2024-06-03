@@ -19,8 +19,11 @@ enableScreens()
 // navigator container
 import AppNavigatorContainer from './app-navigator-container'
 import { PermissionUtils } from './utilities/permissions.util'
+import { storageUtils } from './utilities'
 
 const ReactNativePlayground = (): JSX.Element => {
+  const prevNotificationPermission = storageUtils.get('NOTIFICATION_PERMISSION')
+
   const initialRequestPermissions = async () => {
     Alert.alert(
       'Fingo needs to send you notification.',
@@ -29,18 +32,15 @@ const ReactNativePlayground = (): JSX.Element => {
         {
           text: 'No',
           onPress: () => {
-            Alert.alert('Declined')
+            storageUtils.save('NOTIFICATION_PERMISSION', 'denied')
           },
         },
         {
           text: 'Yes',
           onPress: async () => {
-            Alert.alert('Allowed')
-
             if (Platform.OS === 'ios') {
               await PermissionUtils.requestUserPermission()
             }
-
             if (Platform.OS === 'android') {
               await PermissionUtils.requestNotificationPermissionAndroid()
             }
@@ -52,8 +52,10 @@ const ReactNativePlayground = (): JSX.Element => {
   }
 
   useEffect(() => {
-    initialRequestPermissions()
-  }, [])
+    if (!prevNotificationPermission || prevNotificationPermission === 'denied') {
+      initialRequestPermissions()
+    }
+  }, [prevNotificationPermission])
 
   return (
     <BottomSheetModalProvider>

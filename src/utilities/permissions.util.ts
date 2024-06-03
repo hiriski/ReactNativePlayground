@@ -1,12 +1,13 @@
 import notifee, { AuthorizationStatus } from '@notifee/react-native'
 import { PermissionsAndroid, Platform } from 'react-native'
+import { storageUtils } from './storage.util'
 
 export async function requestUserPermission() {
   const settings = await notifee.requestPermission()
   if (settings.authorizationStatus >= AuthorizationStatus.AUTHORIZED) {
-    // Alert.alert(`Permission settings: ${JSON.stringify(settings)}`)
+    storageUtils.save('NOTIFICATION_PERMISSION', 'granted')
   } else {
-    // Alert.alert('User declined permissions')
+    storageUtils.save('NOTIFICATION_PERMISSION', 'denied')
   }
 }
 
@@ -26,7 +27,12 @@ export async function checkNotificationPermission(): Promise<boolean> {
 const requestNotificationPermissionAndroid = async () => {
   if (Platform.OS === 'android') {
     try {
-      await PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.POST_NOTIFICATIONS)
+      const result = await PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.POST_NOTIFICATIONS)
+      if (result === 'granted') {
+        storageUtils.save('NOTIFICATION_PERMISSION', 'granted')
+      } else if (result === 'denied') {
+        storageUtils.save('NOTIFICATION_PERMISSION', 'denied')
+      }
     } catch (error) {}
   }
 }
