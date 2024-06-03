@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useCallback, useEffect } from 'react'
 
 import { Alert, Platform } from 'react-native'
 
@@ -14,12 +14,16 @@ import { BottomSheetModalProvider } from '@gorhom/bottom-sheet'
 // react native screens.
 import { enableScreens } from 'react-native-screens'
 
+// messaging
+import messaging from '@react-native-firebase/messaging'
+
 enableScreens()
 
 // navigator container
 import AppNavigatorContainer from './app-navigator-container'
 import { PermissionUtils } from './utilities/permissions.util'
 import { storageUtils } from './utilities'
+import { UserAPI } from './api'
 
 const ReactNativePlayground = (): JSX.Element => {
   const prevNotificationPermission = storageUtils.get('NOTIFICATION_PERMISSION')
@@ -51,11 +55,30 @@ const ReactNativePlayground = (): JSX.Element => {
     )
   }
 
+  const registerFCMToken = useCallback(async () => {
+    try {
+      // Register the device with FCM
+      await messaging().registerDeviceForRemoteMessages()
+
+      // Get the token
+      const fcmToken = await messaging().getToken()
+
+      if (fcmToken) {
+        await UserAPI.createUser({ username: Platform.OS, fcmToken })
+      } else {
+      }
+    } catch (e) {}
+  }, [])
+
   useEffect(() => {
     if (!prevNotificationPermission || prevNotificationPermission === 'denied') {
       initialRequestPermissions()
     }
   }, [prevNotificationPermission])
+
+  useEffect(() => {
+    registerFCMToken()
+  }, [])
 
   return (
     <BottomSheetModalProvider>
