@@ -77,6 +77,12 @@
 		<string>Jost-ExtraBoldItalic.ttf</string>
 		<string>Jost-Black.ttf</string>
 		<string>Jost-BlackItalic.ttf</string>
+		<string>Feather.ttf</string>
+		<string>Ionicons.ttf</string>
+		<string>MaterialCommunityIcons.ttf</string>
+		<string>MaterialIcons.ttf</string>
+		<string>Octicons.ttf</string>
+		<string>Zocial.ttf</string>
 	</array>
 	<key>UIBackgroundModes</key>
 	<array>

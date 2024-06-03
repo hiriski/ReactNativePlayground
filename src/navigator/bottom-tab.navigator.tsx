@@ -1,6 +1,6 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { ScreenType } from './navigator.type'
-import EmptyScreen from '@/screen/empty.screen'
+import EmptyScreen from '@/screens/empty.screen'
 
 const TabStack = createBottomTabNavigator()
 

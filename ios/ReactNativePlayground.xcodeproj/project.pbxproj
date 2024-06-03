@@ -40,6 +40,12 @@
 		0B4FBF462C0CE404000EF38A /* PlusJakartaSans-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B4FBF262C0CE404000EF38A /* PlusJakartaSans-ExtraLightItalic.ttf */; };
 		0B4FBF472C0CE404000EF38A /* Jost-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B4FBF272C0CE404000EF38A /* Jost-Italic.ttf */; };
 		0B4FBF482C0CE404000EF38A /* PlusJakartaSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B4FBF282C0CE404000EF38A /* PlusJakartaSans-Regular.ttf */; };
+		0B72A9262C0DA0AB00D3B2C8 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B72A9202C0DA0AB00D3B2C8 /* Zocial.ttf */; };
+		0B72A9272C0DA0AB00D3B2C8 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B72A9212C0DA0AB00D3B2C8 /* Feather.ttf */; };
+		0B72A9282C0DA0AB00D3B2C8 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B72A9222C0DA0AB00D3B2C8 /* Ionicons.ttf */; };
+		0B72A9292C0DA0AB00D3B2C8 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B72A9232C0DA0AB00D3B2C8 /* MaterialCommunityIcons.ttf */; };
+		0B72A92A2C0DA0AB00D3B2C8 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B72A9242C0DA0AB00D3B2C8 /* Octicons.ttf */; };
+		0B72A92B2C0DA0AB00D3B2C8 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B72A9252C0DA0AB00D3B2C8 /* MaterialIcons.ttf */; };
 		0BD16AED2C0CBC8B0095A313 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BD16AEC2C0CBC8B0095A313 /* GoogleService-Info.plist */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -97,6 +103,12 @@
 		0B4FBF272C0CE404000EF38A /* Jost-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Jost-Italic.ttf"; path = "../../src/assets/fonts/Jost-Italic.ttf"; sourceTree = "<group>"; };
 		0B4FBF282C0CE404000EF38A /* PlusJakartaSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlusJakartaSans-Regular.ttf"; path = "../../src/assets/fonts/PlusJakartaSans-Regular.ttf"; sourceTree = "<group>"; };
 		0B4FBF492C0CE459000EF38A /* ReactNativePlayground.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = ReactNativePlayground.entitlements; path = ReactNativePlayground/ReactNativePlayground.entitlements; sourceTree = "<group>"; };
+		0B72A9202C0DA0AB00D3B2C8 /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Zocial.ttf; path = "../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		0B72A9212C0DA0AB00D3B2C8 /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Feather.ttf; path = "../../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		0B72A9222C0DA0AB00D3B2C8 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Ionicons.ttf; path = "../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		0B72A9232C0DA0AB00D3B2C8 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialCommunityIcons.ttf; path = "../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		0B72A9242C0DA0AB00D3B2C8 /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Octicons.ttf; path = "../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		0B72A9252C0DA0AB00D3B2C8 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialIcons.ttf; path = "../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		0BD16AEC2C0CBC8B0095A313 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* ReactNativePlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactNativePlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ReactNativePlayground/AppDelegate.h; sourceTree = "<group>"; };
@@ -156,6 +168,12 @@
 		0B4FBF082C0CE3B6000EF38A /* fonts */ = {
 			isa = PBXGroup;
 			children = (
+				0B72A9212C0DA0AB00D3B2C8 /* Feather.ttf */,
+				0B72A9222C0DA0AB00D3B2C8 /* Ionicons.ttf */,
+				0B72A9232C0DA0AB00D3B2C8 /* MaterialCommunityIcons.ttf */,
+				0B72A9252C0DA0AB00D3B2C8 /* MaterialIcons.ttf */,
+				0B72A9242C0DA0AB00D3B2C8 /* Octicons.ttf */,
+				0B72A9202C0DA0AB00D3B2C8 /* Zocial.ttf */,
 				0B4FBF242C0CE404000EF38A /* Jost-Black.ttf */,
 				0B4FBF172C0CE403000EF38A /* Jost-BlackItalic.ttf */,
 				0B4FBF232C0CE404000EF38A /* Jost-Bold.ttf */,
@@ -362,24 +380,30 @@
 				0B4FBF422C0CE404000EF38A /* Jost-LightItalic.ttf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				0B4FBF412C0CE404000EF38A /* Jost-Thin.ttf in Resources */,
+				0B72A9292C0DA0AB00D3B2C8 /* MaterialCommunityIcons.ttf in Resources */,
 				0B4FBF2E2C0CE404000EF38A /* Jost-ExtraBoldItalic.ttf in Resources */,
 				0B4FBF302C0CE404000EF38A /* Jost-BoldItalic.ttf in Resources */,
 				0B4FBF462C0CE404000EF38A /* PlusJakartaSans-ExtraLightItalic.ttf in Resources */,
 				0B4FBF292C0CE404000EF38A /* PlusJakartaSans-LightItalic.ttf in Resources */,
 				0B4FBF432C0CE404000EF38A /* Jost-Bold.ttf in Resources */,
 				0B4FBF382C0CE404000EF38A /* PlusJakartaSans-ExtraBold.ttf in Resources */,
+				0B72A92A2C0DA0AB00D3B2C8 /* Octicons.ttf in Resources */,
 				0B4FBF2B2C0CE404000EF38A /* PlusJakartaSans-Medium.ttf in Resources */,
 				0B4FBF452C0CE404000EF38A /* Jost-ExtraLight.ttf in Resources */,
 				0B4FBF312C0CE404000EF38A /* PlusJakartaSans-ExtraBoldItalic.ttf in Resources */,
 				0B4FBF3A2C0CE404000EF38A /* Jost-MediumItalic.ttf in Resources */,
 				0B4FBF3C2C0CE404000EF38A /* PlusJakartaSans-ExtraLight.ttf in Resources */,
 				0BD16AED2C0CBC8B0095A313 /* GoogleService-Info.plist in Resources */,
+				0B72A92B2C0DA0AB00D3B2C8 /* MaterialIcons.ttf in Resources */,
+				0B72A9272C0DA0AB00D3B2C8 /* Feather.ttf in Resources */,
 				0B4FBF2D2C0CE404000EF38A /* Jost-Regular.ttf in Resources */,
 				0B4FBF342C0CE404000EF38A /* Jost-SemiBold.ttf in Resources */,
 				0B4FBF322C0CE404000EF38A /* Jost-Medium.ttf in Resources */,
 				0B4FBF3B2C0CE404000EF38A /* PlusJakartaSans-MediumItalic.ttf in Resources */,
+				0B72A9262C0DA0AB00D3B2C8 /* Zocial.ttf in Resources */,
 				0B4FBF442C0CE404000EF38A /* Jost-Black.ttf in Resources */,
 				0B4FBF2F2C0CE404000EF38A /* Jost-ThinItalic.ttf in Resources */,
+				0B72A9282C0DA0AB00D3B2C8 /* Ionicons.ttf in Resources */,
 				0B4FBF3F2C0CE404000EF38A /* PlusJakartaSans-Bold.ttf in Resources */,
 				0B4FBF482C0CE404000EF38A /* PlusJakartaSans-Regular.ttf in Resources */,
 				0B4FBF332C0CE404000EF38A /* Jost-ExtraBold.ttf in Resources */,
@@ -714,7 +738,7 @@
 				CXX = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "i386 arm64";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -809,7 +833,7 @@
 				CXX = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "i386 arm64";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
