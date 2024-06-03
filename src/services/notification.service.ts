@@ -105,18 +105,29 @@ export async function displayNotification({ isForeground, remoteMessage }: Displ
 
 export const messagingBackgroundMessageHandler = () => {
   messaging().setBackgroundMessageHandler(async _remoteMessage => {
-    // console.log('<---------------messaging().setBackgroundMessageHandler _remoteMessage', _remoteMessage)
+    console.log('->>> messagingBackgroundMessageHandler _remoteMessage', _remoteMessage)
 
     /**
      * if remoteMessage?.sentTime & remoteMessage?.data is null mean notification cleared in status bar android
      */
     if (_remoteMessage?.sentTime && _remoteMessage?.data) {
-      await displayNotification({
-        isForeground: false,
-        remoteMessage: _remoteMessage as ICustomFirebaseNotificationPayload,
-      })
+      // await displayNotification({
+      //   isForeground: false,
+      //   remoteMessage: _remoteMessage as ICustomFirebaseNotificationPayload,
+      // })
     }
   })
+}
+
+export const messagingOnNotificationOpenedApp = () => {
+  messaging().onNotificationOpenedApp(remoteMessage => {
+    console.log('->>> messagingOnNotificationOpenedApp remoteMessage', remoteMessage)
+  })
+}
+
+export const messagingGetInitialNotification = async () => {
+  const remoteMessage = await messaging().getInitialNotification()
+  console.log('->>> messagingGetInitialNotification remoteMessage', remoteMessage)
 }
 
 export const messagingForegroundMessageHandler = () => {

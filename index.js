@@ -7,6 +7,8 @@ import { name as appName } from './app.json'
 import {
   messagingBackgroundMessageHandler,
   messagingForegroundMessageHandler,
+  messagingGetInitialNotification,
+  messagingOnNotificationOpenedApp,
   notifeeOnBackgroundEvent,
 } from '@/services/notification.service'
 import ReactNativePlayground from './src/app'
@@ -14,7 +16,13 @@ import ReactNativePlayground from './src/app'
 // Android background handler
 messagingBackgroundMessageHandler()
 
-// Android & ios foreground
+// On notification opened app
+messagingOnNotificationOpenedApp()
+
+// Get initial notification
+messagingGetInitialNotification()
+
+// Notification foreground handler
 messagingForegroundMessageHandler()
 
 // notifee background event
