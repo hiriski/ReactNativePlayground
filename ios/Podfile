@@ -22,6 +22,12 @@ target 'ReactNativePlayground' do
 
   config = use_native_modules!
 
+  target 'ImageNotification' do
+    # use_frameworks! :linkage => :static
+    pod 'Firebase/Messaging'
+  end
+  
+
   use_react_native!(
     :path => config[:reactNativePath],
     # An absolute path to your application root.
@@ -41,6 +47,12 @@ target 'ReactNativePlayground' do
       :mac_catalyst_enabled => false,
       # :ccache_enabled => true
     )
+
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings['APPLICATION_EXTENSION_API_ONLY'] = 'No'
+      end
+    end
 
     # installer.pods_project.targets.each do |target|
     # # Added below if-end statement
