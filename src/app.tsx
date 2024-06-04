@@ -17,13 +17,16 @@ import { enableScreens } from 'react-native-screens'
 // messaging
 import messaging from '@react-native-firebase/messaging'
 
-enableScreens()
+// portal
+import { PortalProvider } from '@gorhom/portal'
 
 // navigator container
 import AppNavigatorContainer from './app-navigator-container'
 import { PermissionUtils } from './utilities/permissions.util'
 import { storageUtils } from './utilities'
 import { UserAPI } from './api'
+
+enableScreens()
 
 const ReactNativePlayground = (): JSX.Element => {
   const prevNotificationPermission = storageUtils.get('NOTIFICATION_PERMISSION')
@@ -64,7 +67,12 @@ const ReactNativePlayground = (): JSX.Element => {
       const fcmToken = await messaging().getToken()
 
       if (fcmToken) {
-        await UserAPI.createUser({ username: Platform.OS, fcmToken })
+        try {
+          await UserAPI.createUser({ username: Platform.OS, fcmToken })
+          Alert.alert('register token success')
+        } catch (e) {
+          Alert.alert('failed to register token')
+        }
       } else {
       }
     } catch (e) {}
@@ -83,9 +91,11 @@ const ReactNativePlayground = (): JSX.Element => {
   return (
     <BottomSheetModalProvider>
       <GestureHandlerRootView style={{ flex: 1 }}>
-        <SafeAreaProvider>
-          <AppNavigatorContainer />
-        </SafeAreaProvider>
+        <PortalProvider>
+          <SafeAreaProvider>
+            <AppNavigatorContainer />
+          </SafeAreaProvider>
+        </PortalProvider>
       </GestureHandlerRootView>
     </BottomSheetModalProvider>
   )
