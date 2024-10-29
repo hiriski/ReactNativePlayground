@@ -16,6 +16,7 @@ module.exports = {
         'prettier/prettier': 0,
         '@typescript-eslint/no-unused-vars': 'warn',
         'no-extra-semi': 0,
+        'react/no-unstable-nested-components': 0,
       },
     },
   ],
