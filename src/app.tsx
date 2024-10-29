@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect } from 'react'
 
-import { Alert, Platform } from 'react-native'
+import { Alert, Platform, StatusBar } from 'react-native'
 
 // gesture handler root view.
 import { GestureHandlerRootView } from 'react-native-gesture-handler'
@@ -33,8 +33,8 @@ const ReactNativePlayground = (): JSX.Element => {
 
   const initialRequestPermissions = async () => {
     Alert.alert(
-      'Fingo needs to send you notification.',
-      "The app will send you reminder so you don't miss your lessons.",
+      'This app needs to send you notification.',
+      '',
       [
         {
           text: 'No',
@@ -69,9 +69,9 @@ const ReactNativePlayground = (): JSX.Element => {
       if (fcmToken) {
         try {
           await UserAPI.createUser({ username: Platform.OS, fcmToken })
-          Alert.alert('register token success')
+          console.info('register token success')
         } catch (e) {
-          Alert.alert('failed to register token')
+          console.info('failed to register token')
         }
       } else {
       }
@@ -93,6 +93,7 @@ const ReactNativePlayground = (): JSX.Element => {
       <GestureHandlerRootView style={{ flex: 1 }}>
         <PortalProvider>
           <SafeAreaProvider>
+            <StatusBar translucent backgroundColor='transparent' />
             <AppNavigatorContainer />
           </SafeAreaProvider>
         </PortalProvider>

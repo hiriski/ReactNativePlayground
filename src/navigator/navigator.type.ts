@@ -3,10 +3,11 @@ import { NativeStackNavigationOptions, NativeStackNavigationProp, NativeStackScr
 
 export type RootNavigatorParamList = {
   bottom_tab_stack: undefined
+  shake_animation_screen: undefined
 } & BottomTabNavigatorParamList
 
 export type BottomTabNavigatorParamList = {
-  dashboard_screen: undefined
+  playground_screen: undefined
   settings_screen: undefined
   components_screen: undefined
   library_screen: undefined

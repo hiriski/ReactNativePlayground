@@ -10,19 +10,28 @@ import { RootNavigatorParamList, ScreenType } from './navigator.type'
 import { LOG } from '@/utilities'
 
 import BottomTabNavigator from './bottom-tab.navigator'
-import { InstagramIOSPageTransitionsContextProvider } from '@/playground/InstagramIOSPageTransitions/context/InstagramIOSPageTransitions.context'
-import InstagramIOSPageTransitionsDetailScreen from '@/playground/InstagramIOSPageTransitions/screens/InstagramIOSPageTransitionsDetailScreen'
-import useAnimatedValues from '@/playground/InstagramIOSPageTransitions/hooks/useAnimatedValues.hook'
-import InstagramIOSPageTransitionsHomeScreen from '@/playground/InstagramIOSPageTransitions/screens/InstagramIOSPageTransitionsHomeScreen'
+import ShakeAnimationScreen from '@/playground/ShakeAnimation/screens/ShakeAnimation.screen'
 
-const rootScreen: Array<ScreenType> = [{ name: 'bottom_tab_stack', component: BottomTabNavigator }]
+// instagram page transitions
+// import { InstagramIOSPageTransitionsContextProvider } from '@/playground/InstagramIOSPageTransitions/context/InstagramIOSPageTransitions.context'
+// import InstagramIOSPageTransitionsDetailScreen from '@/playground/InstagramIOSPageTransitions/screens/InstagramIOSPageTransitionsDetailScreen'
+// import useAnimatedValues from '@/playground/InstagramIOSPageTransitions/hooks/useAnimatedValues.hook'
+// import InstagramIOSPageTransitionsHomeScreen from '@/playground/InstagramIOSPageTransitions/screens/InstagramIOSPageTransitionsHomeScreen'
+
+const rootScreen: Array<ScreenType> = [
+  { name: 'bottom_tab_stack', component: BottomTabNavigator },
+  {
+    name: 'shake_animation_screen',
+    component: ShakeAnimationScreen,
+  },
+]
 
 const RootStack = createNativeStackNavigator<RootNavigatorParamList>()
 
 const RootStackNavigator = (): JSX.Element | null => {
   const [isAppLoaded, setIsAppLoaded] = useState(false)
 
-  const { animatedRef, pageX, pageY, active, headerHeight } = useAnimatedValues()
+  // const { animatedRef, pageX, pageY, active, headerHeight } = useAnimatedValues()
 
   const initApp = async (): Promise<void> => {
     return
@@ -48,9 +57,14 @@ const RootStackNavigator = (): JSX.Element | null => {
 
   return (
     <Fragment>
-      <InstagramIOSPageTransitionsContextProvider>
-        <RootStack.Navigator screenOptions={{ headerShown: false, gestureEnabled: true }}>
-          <RootStack.Screen
+      {/* <InstagramIOSPageTransitionsContextProvider> */}
+      <RootStack.Navigator screenOptions={{ headerShown: false, gestureEnabled: true }}>
+        {rootScreen.map(x => {
+          return <RootStack.Screen key={x.name} component={x.component} name={x.name} options={x.options} />
+        })}
+
+        {/* enable this to see instagram page transitions */}
+        {/* <RootStack.Screen
             name='InstagramIOSPageTransitionsHomeScreen'
             // eslint-disable-next-line react/no-unstable-nested-components
             component={() => (
@@ -64,21 +78,19 @@ const RootStackNavigator = (): JSX.Element | null => {
                 }}
               />
             )}
-          />
-          {rootScreen.map(x => {
-            return <RootStack.Screen key={x.name} component={x.component} name={x.name} options={x.options} />
-          })}
-        </RootStack.Navigator>
+          /> */}
+      </RootStack.Navigator>
 
-        <InstagramIOSPageTransitionsDetailScreen
-          {...{
-            active,
-            pageX,
-            pageY,
-            headerHeight,
-          }}
-        />
-      </InstagramIOSPageTransitionsContextProvider>
+      {/* enable this to see instagram page transitions */}
+      {/* <InstagramIOSPageTransitionsDetailScreen
+        {...{
+          active,
+          pageX,
+          pageY,
+          headerHeight,
+        }}
+      /> */}
+      {/* </InstagramIOSPageTransitionsContextProvider>  */}
     </Fragment>
   )
 }
