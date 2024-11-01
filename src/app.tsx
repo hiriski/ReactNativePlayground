@@ -89,16 +89,16 @@ const ReactNativePlayground = (): JSX.Element => {
   }, [])
 
   return (
-    <BottomSheetModalProvider>
-      <GestureHandlerRootView style={{ flex: 1 }}>
-        <PortalProvider>
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <PortalProvider>
+        <BottomSheetModalProvider>
           <SafeAreaProvider>
             <StatusBar translucent backgroundColor='transparent' />
             <AppNavigatorContainer />
           </SafeAreaProvider>
-        </PortalProvider>
-      </GestureHandlerRootView>
-    </BottomSheetModalProvider>
+        </BottomSheetModalProvider>
+      </PortalProvider>
+    </GestureHandlerRootView>
   )
 }
 

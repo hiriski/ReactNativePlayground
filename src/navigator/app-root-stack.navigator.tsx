@@ -11,6 +11,7 @@ import { LOG } from '@/utilities'
 
 import BottomTabNavigator from './bottom-tab.navigator'
 import ShakeAnimationScreen from '@/playground/ShakeAnimation/screens/ShakeAnimation.screen'
+import BottomSheetScreen from '@/playground/BottomSheet/screens/BottomSheet.screen'
 
 // instagram page transitions
 // import { InstagramIOSPageTransitionsContextProvider } from '@/playground/InstagramIOSPageTransitions/context/InstagramIOSPageTransitions.context'
@@ -23,6 +24,10 @@ const rootScreen: Array<ScreenType> = [
   {
     name: 'shake_animation_screen',
     component: ShakeAnimationScreen,
+  },
+  {
+    name: 'bottom_sheet_screen',
+    component: BottomSheetScreen,
   },
 ]
 

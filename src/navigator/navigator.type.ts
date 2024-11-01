@@ -4,6 +4,7 @@ import { NativeStackNavigationOptions, NativeStackNavigationProp, NativeStackScr
 export type RootNavigatorParamList = {
   bottom_tab_stack: undefined
   shake_animation_screen: undefined
+  bottom_sheet_screen: undefined
 } & BottomTabNavigatorParamList
 
 export type BottomTabNavigatorParamList = {

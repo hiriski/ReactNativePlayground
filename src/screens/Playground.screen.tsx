@@ -1,4 +1,4 @@
-import { RootNavigatorParamList } from '@/navigator/navigator.type'
+import { NavigationProps, RootNavigatorParamList } from '@/navigator/navigator.type'
 import { StatusBar, Text, TouchableOpacity } from 'react-native'
 import { View } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
@@ -18,13 +18,18 @@ const listOfPlayground: ListOfPlayground[] = [
     path: 'shake_animation_screen',
     icon: SolarBoltIcon,
   },
+  {
+    name: 'Bottom Sheet',
+    path: 'bottom_sheet_screen',
+    icon: SolarBoltIcon,
+  },
 ]
 
 const PlaygroundScreen = () => {
   const insets = useSafeAreaInsets()
-  const navigation = useNavigation()
+  const navigation = useNavigation<NavigationProps>()
 
-  const onPress = (path: string) => {
+  const onPress = (path: keyof RootNavigatorParamList) => {
     navigation.navigate(path)
   }
 
@@ -43,8 +48,9 @@ const PlaygroundScreen = () => {
         <Text style={{ textAlign: 'center', fontWeight: 500, fontFamily: 'Jost', color: '#ffffff' }}>Playground</Text>
       </View>
       <View>
-        {listOfPlayground.map(x => (
+        {listOfPlayground.map((x, index) => (
           <TouchableOpacity
+            key={String(index)}
             activeOpacity={0.8}
             onPress={() => onPress(x.path)}
             style={{ paddingHorizontal: 24, paddingVertical: 12, borderBottomColor: '#D5D5D5', borderBottomWidth: 1 }}

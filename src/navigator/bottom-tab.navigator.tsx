@@ -96,6 +96,7 @@ const MyTabBar: FC<TabBarProps> = ({ state, descriptors, navigation }) => {
             onLongPress={onLongPress}
             activeOpacity={0.8}
             style={{ flex: 1, height: 60, alignItems: 'center', justifyContent: 'center' }}
+            key={String(index)}
           >
             {getIcon(route.name, isFocused)}
             <Text style={{ color: isFocused ? '#3366FF' : '#9B9B9B', fontWeight: '500' }}>{label}</Text>
