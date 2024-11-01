@@ -4,14 +4,16 @@ import { useCallback, useRef } from 'react'
 import BottomSheetModalBasic from '../components/BottomModalSheetBasic'
 import BottomSheet, { BottomSheetModal } from '@gorhom/bottom-sheet'
 import BottomSheetBasic from '../components/BottomSheetBasic'
+import BottomSheetModalDetached from '../components/BottomSheetModalDetached'
 
-const bottomSheetTypes = ['Bottom Sheet Basic', 'Bottom Sheet Modal Basic']
+const bottomSheetTypes = ['Bottom Sheet Basic', 'Bottom Sheet Modal Basic', 'Bottom Sheet Modal Detached']
 
 const BottomSheetScreen = () => {
   const insets = useSafeAreaInsets()
 
   const bottomSheetBasicRef = useRef<BottomSheet>(null)
   const bottomSheetModalBasicRef = useRef<BottomSheetModal>(null)
+  const bottomSheetModalDetachedRef = useRef<BottomSheetModal>(null)
 
   const onPressItem = useCallback((type: string) => {
     switch (type) {
@@ -20,6 +22,9 @@ const BottomSheetScreen = () => {
         break
       case 'Bottom Sheet Modal Basic':
         bottomSheetModalBasicRef?.current?.present()
+        break
+      case 'Bottom Sheet Modal Detached':
+        bottomSheetModalDetachedRef?.current?.present()
         break
       default:
         // do nothing
@@ -38,6 +43,7 @@ const BottomSheetScreen = () => {
       </View>
       <BottomSheetBasic ref={bottomSheetBasicRef} />
       <BottomSheetModalBasic ref={bottomSheetModalBasicRef} />
+      <BottomSheetModalDetached ref={bottomSheetModalDetachedRef} />
     </View>
   )
 }
