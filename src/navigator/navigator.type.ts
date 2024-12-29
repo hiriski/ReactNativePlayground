@@ -5,6 +5,11 @@ export type RootNavigatorParamList = {
   bottom_tab_stack: undefined
   shake_animation_screen: undefined
   bottom_sheet_screen: undefined
+  wvc_screen: {
+    name: string | null
+    imgUrl: string | null
+  }
+  wvc_idle_screen: undefined
 } & BottomTabNavigatorParamList
 
 export type BottomTabNavigatorParamList = {

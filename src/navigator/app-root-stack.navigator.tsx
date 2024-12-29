@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState } from 'react'
+import { Fragment, useEffect, useState, JSX } from 'react'
 import { Text } from 'react-native'
 
 // react navigation
@@ -12,6 +12,8 @@ import { LOG } from '@/utilities'
 import BottomTabNavigator from './bottom-tab.navigator'
 import ShakeAnimationScreen from '@/playground/ShakeAnimation/screens/ShakeAnimation.screen'
 import BottomSheetScreen from '@/playground/BottomSheet/screens/BottomSheet.screen'
+import WVCIdleScreen from '@/playground/wvc/screens/WVCIdleScreen'
+import WVCScreen from '@/playground/wvc/screens/WVCScreen'
 
 // instagram page transitions
 // import { InstagramIOSPageTransitionsContextProvider } from '@/playground/InstagramIOSPageTransitions/context/InstagramIOSPageTransitions.context'
@@ -28,6 +30,14 @@ const rootScreen: Array<ScreenType> = [
   {
     name: 'bottom_sheet_screen',
     component: BottomSheetScreen,
+  },
+  {
+    name: 'wvc_screen',
+    component: WVCScreen as () => JSX.Element,
+  },
+  {
+    name: 'wvc_idle_screen',
+    component: WVCIdleScreen,
   },
 ]
 

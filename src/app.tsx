@@ -25,8 +25,10 @@ import AppNavigatorContainer from './app-navigator-container'
 import { PermissionUtils } from './utilities/permissions.util'
 import { storageUtils } from './utilities'
 import { UserAPI } from './api'
+import initPusher from './services/pusher.service'
 
 enableScreens()
+initPusher()
 
 const ReactNativePlayground = (): JSX.Element => {
   const prevNotificationPermission = storageUtils.get('NOTIFICATION_PERMISSION')

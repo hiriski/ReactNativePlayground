@@ -18,10 +18,10 @@ const AppNavigatorContainer = () => {
         routeNameRef.current = navigationRef?.getCurrentRoute()?.name
       }}
       onStateChange={async () => {
-        const previousRouteName = routeNameRef.current
-        const currentRouteName = navigationRef?.getCurrentRoute()?.name
-        LOG.info(`previousRouteName -> ${previousRouteName}`)
-        LOG.info(`currentRouteName -> ${currentRouteName}`)
+        // const previousRouteName = routeNameRef.current
+        // const currentRouteName = navigationRef?.getCurrentRoute()?.name
+        // LOG.info(`previousRouteName -> ${previousRouteName}`)
+        // LOG.info(`currentRouteName -> ${currentRouteName}`)
       }}
     >
       <AppRootStackNavigator />

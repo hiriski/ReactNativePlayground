@@ -54,6 +54,7 @@
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		B1BBEFC9D02714D5A2C9543E /* libPods-ReactNativePlayground-ReactNativePlaygroundTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21FF2D42BBCB0FD32473919F /* libPods-ReactNativePlayground-ReactNativePlaygroundTests.a */; };
 		BC45BB71DEFC13CB78F1A3A3 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 8EF32207932F3D6CDE284BAE /* PrivacyInfo.xcprivacy */; };
+		F1366BC52D21BED3003D1BFA /* ringtone-reflection.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F1366BC42D21BED3003D1BFA /* ringtone-reflection.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +146,7 @@
 		8EF32207932F3D6CDE284BAE /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = ReactNativePlayground/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		B6F3E794B88EE821A6AA0BFE /* Pods-ReactNativePlayground-ImageNotification.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativePlayground-ImageNotification.release.xcconfig"; path = "Target Support Files/Pods-ReactNativePlayground-ImageNotification/Pods-ReactNativePlayground-ImageNotification.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F1366BC42D21BED3003D1BFA /* ringtone-reflection.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ringtone-reflection.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -276,6 +278,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				F1366BC32D21BEB7003D1BFA /* audios */,
 				0B4FBF082C0CE3B6000EF38A /* fonts */,
 				0BD16AEC2C0CBC8B0095A313 /* GoogleService-Info.plist */,
 				13B07FAE1A68108700A75B9A /* ReactNativePlayground */,
@@ -311,6 +314,14 @@
 				B6F3E794B88EE821A6AA0BFE /* Pods-ReactNativePlayground-ImageNotification.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F1366BC32D21BEB7003D1BFA /* audios */ = {
+			isa = PBXGroup;
+			children = (
+				F1366BC42D21BED3003D1BFA /* ringtone-reflection.mp3 */,
+			);
+			path = audios;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,6 +447,7 @@
 				0B4FBF3B2C0CE404000EF38A /* PlusJakartaSans-MediumItalic.ttf in Resources */,
 				0B72A9262C0DA0AB00D3B2C8 /* Zocial.ttf in Resources */,
 				0B4FBF442C0CE404000EF38A /* Jost-Black.ttf in Resources */,
+				F1366BC52D21BED3003D1BFA /* ringtone-reflection.mp3 in Resources */,
 				0B4FBF2F2C0CE404000EF38A /* Jost-ThinItalic.ttf in Resources */,
 				0B72A9282C0DA0AB00D3B2C8 /* Ionicons.ttf in Resources */,
 				0B4FBF3F2C0CE404000EF38A /* PlusJakartaSans-Bold.ttf in Resources */,
