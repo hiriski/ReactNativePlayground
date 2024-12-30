@@ -14,6 +14,7 @@ import ShakeAnimationScreen from '@/playground/ShakeAnimation/screens/ShakeAnima
 import BottomSheetScreen from '@/playground/BottomSheet/screens/BottomSheet.screen'
 import WVCIdleScreen from '@/playground/wvc/screens/WVCIdleScreen'
 import WVCScreen from '@/playground/wvc/screens/WVCScreen'
+import FlashListScreen from '@/playground/FlashList/screens/FlashList.screen'
 
 // instagram page transitions
 // import { InstagramIOSPageTransitionsContextProvider } from '@/playground/InstagramIOSPageTransitions/context/InstagramIOSPageTransitions.context'
@@ -38,6 +39,10 @@ const rootScreen: Array<ScreenType> = [
   {
     name: 'wvc_idle_screen',
     component: WVCIdleScreen,
+  },
+  {
+    name: 'flash_list_screen',
+    component: FlashListScreen,
   },
 ]
 
