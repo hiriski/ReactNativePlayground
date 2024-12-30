@@ -8,6 +8,7 @@ import PlaygroundScreen from '@/screens/Playground.screen'
 import SolarBoltIcon from '@/assets/icons/solar--bolt-bold-duotone.svg'
 import SolarBookmarkIcon from '@/assets/icons/solar--bookmark-opened-bold-duotone.svg'
 import SolarSettingsIcon from '@/assets/icons/solar--settings-minimalistic-bold-duotone.svg'
+import { useSafeAreaInsets } from 'react-native-safe-area-context'
 
 const TabStack = createBottomTabNavigator<BottomTabNavigatorParamList>()
 
@@ -58,8 +59,9 @@ const getIcon = (routeName: string, isFocused: boolean) => {
 }
 
 const MyTabBar: FC<TabBarProps> = ({ state, descriptors, navigation }) => {
+  const insets = useSafeAreaInsets()
   return (
-    <View style={{ flexDirection: 'row' }}>
+    <View style={{ flexDirection: 'row', paddingBottom: insets.bottom, backgroundColor: '#ffffff' }}>
       {state.routes.map((route, index) => {
         const { options } = descriptors[route.key]
 
@@ -99,7 +101,7 @@ const MyTabBar: FC<TabBarProps> = ({ state, descriptors, navigation }) => {
             key={String(index)}
           >
             {getIcon(route.name, isFocused)}
-            <Text style={{ color: isFocused ? '#3366FF' : '#9B9B9B', fontWeight: '500' }}>{label}</Text>
+            <Text style={{ color: isFocused ? '#3366FF' : '#9B9B9B', fontWeight: '500', fontSize: 12, marginTop: 6 }}>{label}</Text>
           </TouchableOpacity>
         )
       })}

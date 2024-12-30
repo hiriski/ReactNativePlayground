@@ -23,6 +23,11 @@ const listOfPlayground: ListOfPlayground[] = [
     path: 'bottom_sheet_screen',
     icon: SolarBoltIcon,
   },
+  {
+    name: 'WVC',
+    path: 'wvc_idle_screen',
+    icon: SolarBoltIcon,
+  },
 ]
 
 const PlaygroundScreen = () => {
