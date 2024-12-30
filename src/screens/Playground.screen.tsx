@@ -28,6 +28,11 @@ const listOfPlayground: ListOfPlayground[] = [
     path: 'wvc_idle_screen',
     icon: SolarBoltIcon,
   },
+  {
+    name: 'FlashList',
+    path: 'flash_list_screen',
+    icon: SolarBoltIcon,
+  },
 ]
 
 const PlaygroundScreen = () => {

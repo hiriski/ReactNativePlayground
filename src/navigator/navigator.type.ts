@@ -10,6 +10,7 @@ export type RootNavigatorParamList = {
     imgUrl: string | null
   }
   wvc_idle_screen: undefined
+  flash_list_screen: undefined
 } & BottomTabNavigatorParamList
 
 export type BottomTabNavigatorParamList = {
