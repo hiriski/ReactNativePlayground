@@ -15,6 +15,7 @@ import BottomSheetScreen from '@/playground/BottomSheet/screens/BottomSheet.scre
 import WVCIdleScreen from '@/playground/wvc/screens/WVCIdleScreen'
 import WVCScreen from '@/playground/wvc/screens/WVCScreen'
 import FlashListScreen from '@/playground/FlashList/screens/FlashList.screen'
+import ConcurrentSound from '@/playground/ConcurrentSound/screens/ConcurrentSound.screen'
 
 // instagram page transitions
 // import { InstagramIOSPageTransitionsContextProvider } from '@/playground/InstagramIOSPageTransitions/context/InstagramIOSPageTransitions.context'
@@ -43,6 +44,10 @@ const rootScreen: Array<ScreenType> = [
   {
     name: 'flash_list_screen',
     component: FlashListScreen,
+  },
+  {
+    name: 'concurrent_sound',
+    component: ConcurrentSound,
   },
 ]
 

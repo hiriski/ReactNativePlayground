@@ -2549,6 +2549,11 @@
   resolved "https://registry.yarnpkg.com/@ungap/structured-clone/-/structured-clone-1.2.0.tgz#756641adb587851b5ccb3e095daf27ae581c8406"
   integrity sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==
 
+"@vokhuyet/react-native-concurrent-sound@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@vokhuyet/react-native-concurrent-sound/-/react-native-concurrent-sound-0.1.1.tgz#b29ce2865128b4f496c64f481216d0d0650bc624"
+  integrity sha512-V6nLjEyXoDPABLhFrxDzhij/mMzWVmtJXHGTKT11mgIL7z1VeBKUpnrocpqJ4fMowOQPUTc/ZXok2UWFPjHuhQ==
+
 "@xmldom/xmldom@^0.8.8":
   version "0.8.10"
   resolved "https://registry.yarnpkg.com/@xmldom/xmldom/-/xmldom-0.8.10.tgz#a1337ca426aa61cef9fe15b5b28e340a72f6fa99"

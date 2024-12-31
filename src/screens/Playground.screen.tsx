@@ -33,6 +33,11 @@ const listOfPlayground: ListOfPlayground[] = [
     path: 'flash_list_screen',
     icon: SolarBoltIcon,
   },
+  {
+    name: 'Concurrent Sound',
+    path: 'concurrent_sound',
+    icon: SolarBoltIcon,
+  },
 ]
 
 const PlaygroundScreen = () => {
