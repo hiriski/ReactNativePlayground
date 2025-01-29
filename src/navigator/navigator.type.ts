@@ -12,6 +12,7 @@ export type RootNavigatorParamList = {
   wvc_idle_screen: undefined
   flash_list_screen: undefined
   concurrent_sound: undefined
+  screenshot_aware_screen: undefined
 } & BottomTabNavigatorParamList
 
 export type BottomTabNavigatorParamList = {

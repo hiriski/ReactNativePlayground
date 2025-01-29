@@ -2,8 +2,8 @@ import { NavigationProps, RootNavigatorParamList } from '@/navigator/navigator.t
 import { StatusBar, Text, TouchableOpacity } from 'react-native'
 import { View } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
-
 import SolarBoltIcon from '@/assets/icons/solar--bolt-bold-duotone.svg'
+import SolarSmartphoneVibrateIcon from '@/assets/icons/solar--smartphone-vibration-bold-duotone.svg'
 import { useNavigation } from '@react-navigation/native'
 
 type ListOfPlayground = {
@@ -37,6 +37,11 @@ const listOfPlayground: ListOfPlayground[] = [
     name: 'Concurrent Sound',
     path: 'concurrent_sound',
     icon: SolarBoltIcon,
+  },
+  {
+    name: 'Screenshot Aware',
+    path: 'screenshot_aware_screen',
+    icon: SolarSmartphoneVibrateIcon,
   },
 ]
 

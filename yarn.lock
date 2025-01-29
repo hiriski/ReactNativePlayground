@@ -6569,6 +6569,11 @@ react-native-screens@^3.31.1:
     react-freeze "^1.0.0"
     warn-once "^0.1.0"
 
+react-native-screenshot-aware@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/react-native-screenshot-aware/-/react-native-screenshot-aware-1.0.6.tgz#8fde5bd40ec7890e921e3be3a5d72c1099a44510"
+  integrity sha512-87D9prBb5jG/8j+l3pYdeNuroW63+Qps+V+v3CU3Cm78gyr3P2P/vKDZh0ipb8n+lBHuAI/tmaSBIkEdyouPRQ==
+
 react-native-sound@^0.11.2:
   version "0.11.2"
   resolved "https://registry.yarnpkg.com/react-native-sound/-/react-native-sound-0.11.2.tgz#e542dc5b9e16ab4b3ac7e6eaddb1fc8d98da9038"
