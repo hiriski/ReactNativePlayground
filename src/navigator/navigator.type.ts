@@ -1,15 +1,10 @@
-import React from 'react'
+import React, { JSX } from 'react'
 import { NativeStackNavigationOptions, NativeStackNavigationProp, NativeStackScreenProps } from '@react-navigation/native-stack'
 
 export type RootNavigatorParamList = {
   bottom_tab_stack: undefined
   shake_animation_screen: undefined
   bottom_sheet_screen: undefined
-  wvc_screen: {
-    name: string | null
-    imgUrl: string | null
-  }
-  wvc_idle_screen: undefined
   flash_list_screen: undefined
   concurrent_sound: undefined
 } & BottomTabNavigatorParamList

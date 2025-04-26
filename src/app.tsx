@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect } from 'react'
+import React, { JSX, useCallback, useEffect } from 'react'
 
 import { Alert, Platform, StatusBar } from 'react-native'
 
@@ -32,6 +32,7 @@ initPusher()
 
 const ReactNativePlayground = (): JSX.Element => {
   const prevNotificationPermission = storageUtils.get('NOTIFICATION_PERMISSION')
+  console.log('prevNotificationPermission', prevNotificationPermission)
 
   const initialRequestPermissions = async () => {
     Alert.alert(
@@ -67,6 +68,7 @@ const ReactNativePlayground = (): JSX.Element => {
 
       // Get the token
       const fcmToken = await messaging().getToken()
+      console.log('fcmToken', fcmToken)
 
       if (fcmToken) {
         try {
