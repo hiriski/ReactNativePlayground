@@ -12,8 +12,6 @@ import { LOG } from '@/utilities'
 import BottomTabNavigator from './bottom-tab.navigator'
 import ShakeAnimationScreen from '@/playground/ShakeAnimation/screens/ShakeAnimation.screen'
 import BottomSheetScreen from '@/playground/BottomSheet/screens/BottomSheet.screen'
-import WVCIdleScreen from '@/playground/wvc/screens/WVCIdleScreen'
-import WVCScreen from '@/playground/wvc/screens/WVCScreen'
 import FlashListScreen from '@/playground/FlashList/screens/FlashList.screen'
 import ConcurrentSound from '@/playground/ConcurrentSound/screens/ConcurrentSound.screen'
 
@@ -32,14 +30,6 @@ const rootScreen: Array<ScreenType> = [
   {
     name: 'bottom_sheet_screen',
     component: BottomSheetScreen,
-  },
-  {
-    name: 'wvc_screen',
-    component: WVCScreen as () => JSX.Element,
-  },
-  {
-    name: 'wvc_idle_screen',
-    component: WVCIdleScreen,
   },
   {
     name: 'flash_list_screen',
