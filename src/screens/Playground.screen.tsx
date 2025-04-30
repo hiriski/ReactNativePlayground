@@ -33,6 +33,11 @@ const listOfPlayground: ListOfPlayground[] = [
     path: 'concurrent_sound',
     icon: SolarBoltIcon,
   },
+  {
+    name: 'React Hook Form',
+    path: 'react_hook_form',
+    icon: SolarBoltIcon,
+  },
 ]
 
 const PlaygroundScreen = () => {
