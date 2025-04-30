@@ -14,6 +14,7 @@ import ShakeAnimationScreen from '@/playground/ShakeAnimation/screens/ShakeAnima
 import BottomSheetScreen from '@/playground/BottomSheet/screens/BottomSheet.screen'
 import FlashListScreen from '@/playground/FlashList/screens/FlashList.screen'
 import ConcurrentSound from '@/playground/ConcurrentSound/screens/ConcurrentSound.screen'
+import ReactHookFormScreen from '@/playground/ReactHookForm/screens/ReactHookForm.screen'
 
 // instagram page transitions
 // import { InstagramIOSPageTransitionsContextProvider } from '@/playground/InstagramIOSPageTransitions/context/InstagramIOSPageTransitions.context'
@@ -38,6 +39,10 @@ const rootScreen: Array<ScreenType> = [
   {
     name: 'concurrent_sound',
     component: ConcurrentSound,
+  },
+  {
+    name: 'react_hook_form',
+    component: ReactHookFormScreen,
   },
 ]
 

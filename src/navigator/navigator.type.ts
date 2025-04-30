@@ -7,6 +7,7 @@ export type RootNavigatorParamList = {
   bottom_sheet_screen: undefined
   flash_list_screen: undefined
   concurrent_sound: undefined
+  react_hook_form: undefined
 } & BottomTabNavigatorParamList
 
 export type BottomTabNavigatorParamList = {
