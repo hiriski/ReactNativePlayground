@@ -15,6 +15,7 @@ import BottomSheetScreen from '@/playground/BottomSheet/screens/BottomSheet.scre
 import FlashListScreen from '@/playground/FlashList/screens/FlashList.screen'
 import ConcurrentSound from '@/playground/ConcurrentSound/screens/ConcurrentSound.screen'
 import ReactHookFormScreen from '@/playground/ReactHookForm/screens/ReactHookForm.screen'
+import SplashScreen from '@/screens/Splash.screen'
 
 // instagram page transitions
 // import { InstagramIOSPageTransitionsContextProvider } from '@/playground/InstagramIOSPageTransitions/context/InstagramIOSPageTransitions.context'
@@ -65,14 +66,16 @@ const RootStackNavigator = (): JSX.Element | null => {
           LOG.error(`initApp error  -> ${JSON.stringify(reason)}`)
         })
         .finally(() => {
-          setIsAppLoaded(true)
+          setTimeout(() => {
+            setIsAppLoaded(true)
+          }, 6250)
           //  do something
         })
     })()
   }, [])
 
   if (!isAppLoaded) {
-    return <Text>Initializing...</Text>
+    return <SplashScreen />
   }
 
   return (
