@@ -5,11 +5,11 @@ import { NavigationContainer, useNavigationContainerRef } from '@react-navigatio
 import AppRootStackNavigator from '@/navigator/app-root-stack.navigator'
 
 // utils
-import { LOG } from './utilities'
+// import { LOG } from './utilities'
 
 const AppNavigatorContainer = () => {
   const navigationRef = useNavigationContainerRef()
-  const routeNameRef = useRef<string | undefined>()
+  const routeNameRef = useRef<string | undefined>(undefined)
 
   return (
     <NavigationContainer
