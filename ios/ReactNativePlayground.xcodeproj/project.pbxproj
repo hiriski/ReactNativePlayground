@@ -3,30 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		128EC4F779DFC544C7A8C40E /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
-		2A04B5C780A70D3ED1C98589 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		82E80ED37E44D556DFD513DC /* Pods_ReactNativePlayground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7AA94B3EE2B2543E5C83CB /* Pods_ReactNativePlayground.framework */; };
-		F1EFE9B52DBBA05900A528A7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1EFE9B42DBBA05900A528A7 /* GoogleService-Info.plist */; };
+		8FA2DCA1454EA83DEB48E003 /* Pods_ReactNativePlayground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEED101457F4904F27806B92 /* Pods_ReactNativePlayground.framework */; };
+		F10CD7AD2DC90CB8002149BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F10CD7AC2DC90CB8002149BD /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		F1C4A9AD2DBCEA6900E84A49 /* Embed Foundation Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-			);
-			name = "Embed Foundation Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		13B07F961A680F5B00A75B9A /* ReactNativePlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactNativePlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,20 +24,14 @@
 		5709B34CF0A7D63546082F79 /* Pods-ReactNativePlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativePlayground.release.xcconfig"; path = "Target Support Files/Pods-ReactNativePlayground/Pods-ReactNativePlayground.release.xcconfig"; sourceTree = "<group>"; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ReactNativePlayground/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ReactNativePlayground/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DEED101457F4904F27806B92 /* Pods_ReactNativePlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactNativePlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		EF7AA94B3EE2B2543E5C83CB /* Pods_ReactNativePlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactNativePlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F1716DDC2DBCD2660059DECE /* ReactNativePlayground.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = ReactNativePlayground.entitlements; path = ReactNativePlayground/ReactNativePlayground.entitlements; sourceTree = "<group>"; };
-		F1EFE9B42DBBA05900A528A7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F10CD7AC2DC90CB8002149BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F149EA772DC921B3002CB095 /* ReactNativePlayground.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = ReactNativePlayground.entitlements; path = ReactNativePlayground/ReactNativePlayground.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		F1716D5B2DBCD0760059DECE /* fonts */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
-			path = fonts;
-			sourceTree = "<group>";
-		};
+		F17EB33D2DC9150D00DF0591 /* fonts */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = fonts; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82E80ED37E44D556DFD513DC /* Pods_ReactNativePlayground.framework in Frameworks */,
+				8FA2DCA1454EA83DEB48E003 /* Pods_ReactNativePlayground.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +49,7 @@
 		13B07FAE1A68108700A75B9A /* ReactNativePlayground */ = {
 			isa = PBXGroup;
 			children = (
-				F1716DDC2DBCD2660059DECE /* ReactNativePlayground.entitlements */,
+				F149EA772DC921B3002CB095 /* ReactNativePlayground.entitlements */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				761780EC2CA45674006654EE /* AppDelegate.swift */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
@@ -82,7 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				EF7AA94B3EE2B2543E5C83CB /* Pods_ReactNativePlayground.framework */,
+				DEED101457F4904F27806B92 /* Pods_ReactNativePlayground.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -97,8 +78,8 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				F1716D5B2DBCD0760059DECE /* fonts */,
-				F1EFE9B42DBBA05900A528A7 /* GoogleService-Info.plist */,
+				F17EB33D2DC9150D00DF0591 /* fonts */,
+				F10CD7AC2DC90CB8002149BD /* GoogleService-Info.plist */,
 				13B07FAE1A68108700A75B9A /* ReactNativePlayground */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
@@ -141,15 +122,14 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
 				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
-				2346E6C31F3A032D0F06B866 /* [CP-User] [RNFB] Core Configuration */,
-				F1C4A9AD2DBCEA6900E84A49 /* Embed Foundation Extensions */,
+				AA16BC39159B706C8899BBFD /* [CP-User] [RNFB] Core Configuration */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				F1716D5B2DBCD0760059DECE /* fonts */,
+				F17EB33D2DC9150D00DF0591 /* fonts */,
 			);
 			name = ReactNativePlayground;
 			productName = ReactNativePlayground;
@@ -170,6 +150,7 @@
 				};
 			};
 			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ReactNativePlayground" */;
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -177,7 +158,6 @@
 				Base,
 			);
 			mainGroup = 83CBB9F61A601CBA00E9B192;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -193,9 +173,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
-				F1EFE9B52DBBA05900A528A7 /* GoogleService-Info.plist in Resources */,
+				F10CD7AD2DC90CB8002149BD /* GoogleService-Info.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				2A04B5C780A70D3ED1C98589 /* PrivacyInfo.xcprivacy in Resources */,
+				128EC4F779DFC544C7A8C40E /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,7 +215,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactNativePlayground/Pods-ReactNativePlayground-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2346E6C31F3A032D0F06B866 /* [CP-User] [RNFB] Core Configuration */ = {
+		AA16BC39159B706C8899BBFD /* [CP-User] [RNFB] Core Configuration */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -439,10 +419,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
@@ -522,10 +499,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;

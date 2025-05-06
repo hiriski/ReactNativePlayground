@@ -1,5 +1,5 @@
 {
-  "name": "react-native-playground",
+  "name": "ReactNativePlayground",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -14,9 +14,9 @@
     "@gorhom/portal": "^1.0.14",
     "@notifee/react-native": "^9.1.8",
     "@pusher/pusher-websocket-react-native": "^1.3.1",
-    "@react-native-firebase/app": "^21.14.0",
-    "@react-native-firebase/auth": "^21.14.0",
-    "@react-native-firebase/messaging": "^21.14.0",
+    "@react-native-firebase/app": "^22.1.0",
+    "@react-native-firebase/auth": "^22.1.0",
+    "@react-native-firebase/messaging": "^22.1.0",
     "@react-navigation/bottom-tabs": "^7.3.10",
     "@react-navigation/drawer": "^7.3.9",
     "@react-navigation/native": "^7.1.6",
@@ -26,7 +26,7 @@
     "axios": "^1.8.4",
     "react": "19.0.0",
     "react-hook-form": "^7.56.1",
-    "react-native": "0.79.1",
+    "react-native": "0.79.2",
     "react-native-drawer-layout": "^4.1.6",
     "react-native-fast-image": "^8.6.3",
     "react-native-gesture-handler": "^2.25.0",

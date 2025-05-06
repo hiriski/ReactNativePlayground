@@ -13,6 +13,11 @@ import {
 } from '@/services/notification.service'
 import ReactNativePlayground from './src/app'
 
+// rn screens
+import { enableScreens } from 'react-native-screens'
+
+enableScreens(true)
+
 // Android background handler
 messagingBackgroundMessageHandler()
 
