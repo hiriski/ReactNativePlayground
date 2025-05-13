@@ -1,5 +1,4 @@
 import { Fragment, useEffect, useState, JSX } from 'react'
-import { Text } from 'react-native'
 
 // react navigation
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
