@@ -7,7 +7,8 @@
     "ios": "react-native run-ios --simulator='iPhone 16 Pro'",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "android:build-release": "npx react-native build-android --mode=release"
   },
   "dependencies": {
     "@gorhom/bottom-sheet": "^5.1.4",
