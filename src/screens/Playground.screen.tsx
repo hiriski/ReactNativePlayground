@@ -4,6 +4,7 @@ import { View } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 
 import SolarBoltIcon from '@/assets/icons/solar--bolt-bold-duotone.svg'
+import SolarGalleryRoundDuoToneIcon from '@/assets/icons/solar--gallery-round-bold-duotone.svg'
 import { useNavigation } from '@react-navigation/native'
 
 type ListOfPlayground = {
@@ -37,6 +38,11 @@ const listOfPlayground: ListOfPlayground[] = [
     name: 'React Hook Form',
     path: 'react_hook_form',
     icon: SolarBoltIcon,
+  },
+  {
+    name: 'Flatlist Gallery Image',
+    path: 'flatlist_gallery_image_screen',
+    icon: SolarGalleryRoundDuoToneIcon,
   },
 ]
 

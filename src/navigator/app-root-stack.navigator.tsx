@@ -15,6 +15,7 @@ import FlashListScreen from '@/playground/FlashList/screens/FlashList.screen'
 import ConcurrentSound from '@/playground/ConcurrentSound/screens/ConcurrentSound.screen'
 import ReactHookFormScreen from '@/playground/ReactHookForm/screens/ReactHookForm.screen'
 import SplashScreen from '@/screens/Splash.screen'
+import FlatlistGalleryImageScreen from '@/playground/FlatlistGalleryImage/screens/FlatlistGalleryImage.screen'
 
 // instagram page transitions
 // import { InstagramIOSPageTransitionsContextProvider } from '@/playground/InstagramIOSPageTransitions/context/InstagramIOSPageTransitions.context'
@@ -43,6 +44,10 @@ const rootScreen: Array<ScreenType> = [
   {
     name: 'react_hook_form',
     component: ReactHookFormScreen,
+  },
+  {
+    name: 'flatlist_gallery_image_screen',
+    component: FlatlistGalleryImageScreen,
   },
 ]
 
