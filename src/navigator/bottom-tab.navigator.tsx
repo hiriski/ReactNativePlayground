@@ -32,7 +32,7 @@ const tabScreens: Array<ScreenType> = [
 
 type TabBarProps = BottomTabBarProps
 
-const getTabName = (routeName: string) => {
+const getTabName = (routeName: keyof BottomTabNavigatorParamList) => {
   switch (routeName) {
     case 'playground_screen':
       return 'Playground'
@@ -45,7 +45,7 @@ const getTabName = (routeName: string) => {
   }
 }
 
-const getIcon = (routeName: string, isFocused: boolean) => {
+const getIcon = (routeName: keyof BottomTabNavigatorParamList, isFocused: boolean) => {
   switch (routeName) {
     case 'playground_screen':
       return <SolarBoltIcon height={20} width={20} color={isFocused ? '#3366FF' : '#9B9B9B'} />
@@ -65,7 +65,7 @@ const MyTabBar: FC<TabBarProps> = ({ state, descriptors, navigation }) => {
       {state.routes.map((route, index) => {
         const { options } = descriptors[route.key]
 
-        const label = getTabName(route.name)
+        const label = getTabName(route.name as keyof BottomTabNavigatorParamList)
 
         const isFocused = state.index === index
 
@@ -100,7 +100,7 @@ const MyTabBar: FC<TabBarProps> = ({ state, descriptors, navigation }) => {
             style={{ flex: 1, height: 60, alignItems: 'center', justifyContent: 'center' }}
             key={String(index)}
           >
-            {getIcon(route.name, isFocused)}
+            {getIcon(route.name as keyof BottomTabNavigatorParamList, isFocused)}
             <Text style={{ color: isFocused ? '#3366FF' : '#9B9B9B', fontWeight: '500', fontSize: 12, marginTop: 6 }}>{label}</Text>
           </TouchableOpacity>
         )

@@ -8,6 +8,7 @@ export type RootNavigatorParamList = {
   flash_list_screen: undefined
   concurrent_sound: undefined
   react_hook_form: undefined
+  flatlist_gallery_image_screen: undefined
 } & BottomTabNavigatorParamList
 
 export type BottomTabNavigatorParamList = {
