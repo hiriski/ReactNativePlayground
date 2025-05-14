@@ -29,6 +29,7 @@ const BottomSheetModalDetached = forwardRef<Ref, Props>((props, ref) => {
       index={0}
       stackBehavior='push'
       snapPoints={snapPoints}
+      enableDynamicSizing={false}
       enablePanDownToClose={true}
       detached={true}
       bottomInset={24}

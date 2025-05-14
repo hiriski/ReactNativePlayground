@@ -29,6 +29,7 @@ const BottomSheetBasic = forwardRef<Ref, Props>((props, ref) => {
       index={-1}
       snapPoints={snapPoints}
       enablePanDownToClose={true}
+      enableDynamicSizing={false}
       onChange={handleSheetChanges}
       backdropComponent={renderBackdrop}
       style={StyleSheet.flatten([styles.bottomSheet_root])}

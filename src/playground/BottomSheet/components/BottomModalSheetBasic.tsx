@@ -29,6 +29,7 @@ const BottomSheetModalBasic = forwardRef<Ref, Props>((props, ref) => {
       index={0}
       stackBehavior='push'
       snapPoints={snapPoints}
+      enableDynamicSizing={false}
       enablePanDownToClose={true}
       enableDismissOnClose={true}
       backdropComponent={renderBackdrop}
