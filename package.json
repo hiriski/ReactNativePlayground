@@ -13,6 +13,7 @@
   "dependencies": {
     "@gorhom/bottom-sheet": "^5.1.4",
     "@gorhom/portal": "^1.0.14",
+    "@kujang/uniui": "^1.0.9",
     "@notifee/react-native": "^9.1.8",
     "@pusher/pusher-websocket-react-native": "^1.3.1",
     "@react-native-firebase/app": "^22.1.0",
@@ -30,15 +31,18 @@
     "react-native": "0.79.2",
     "react-native-config": "^1.5.5",
     "react-native-drawer-layout": "^4.1.8",
+    "react-native-edge-to-edge": "^1.6.0",
     "react-native-fast-image": "^8.6.3",
     "react-native-gesture-handler": "^2.25.0",
     "react-native-mmkv": "^3.2.0",
+    "react-native-nitro-modules": "^0.25.2",
     "react-native-reanimated": "^3.17.5",
     "react-native-safe-area-context": "^5.4.0",
     "react-native-screens": "^4.10.0",
     "react-native-sound": "^0.11.2",
     "react-native-svg": "^15.11.2",
-    "react-native-svg-transformer": "^1.5.1"
+    "react-native-svg-transformer": "^1.5.1",
+    "react-native-unistyles": "^3.0.0-rc.4"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",

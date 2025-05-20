@@ -34,3 +34,8 @@ target 'ReactNativePlayground' do
     )
   end
 end
+
+target 'ImageNotification' do
+  use_frameworks! :linkage => :static
+  pod 'Firebase/Messaging'
+end

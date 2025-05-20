@@ -15,6 +15,9 @@ import ReactNativePlayground from './src/app'
 
 // rn screens
 import { enableScreens } from 'react-native-screens'
+import { StyleSheet } from 'react-native-unistyles'
+
+import { theme_breakpoints, themes } from '@kujang/uniui'
 
 enableScreens(true)
 
@@ -32,6 +35,15 @@ messagingForegroundMessageHandler()
 
 // notifee background event
 notifeeOnBackgroundEvent()
+
+StyleSheet.configure({
+  settings: {
+    // adaptiveThemes: true,
+    initialTheme: 'light',
+  },
+  breakpoints: theme_breakpoints,
+  themes: themes,
+})
 
 const HeadlessCheck = ({ isHeadless }) => {
   if (isHeadless) {

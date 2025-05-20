@@ -26,7 +26,7 @@ import { PermissionUtils } from './utilities/permissions.util'
 import { storageUtils } from './utilities'
 import { UserAPI } from './api'
 import initPusher from './services/pusher.service'
-import { AppConfig } from './configs'
+// import { AppConfig } from './configs'
 
 enableScreens()
 initPusher()
@@ -69,14 +69,12 @@ const ReactNativePlayground = (): JSX.Element => {
 
       // Get the token
       const fcmToken = await messaging().getToken()
-      console.log('fcmToken', fcmToken)
-
       if (fcmToken) {
         try {
-          await UserAPI.createUser({ username: Platform.OS, fcmToken })
-          console.info('register token success')
+          await UserAPI.storeFcmToken({ device_name: Platform.OS, fcm_token: fcmToken })
+          Alert.alert('register token success')
         } catch (e) {
-          console.info('failed to register token')
+          Alert.alert('failed to register token')
         }
       } else {
       }
